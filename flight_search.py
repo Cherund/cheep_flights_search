@@ -26,7 +26,8 @@ class FlightSearch:
         search_endpoint = f'{TEQUILA_ENDPOINT}/v2/search'
         now = datetime.datetime.now()
         half_year = now + datetime.timedelta(days=180)
-
+        
+#       can change the fly_from for your city IATA code
         headers = {"apikey": APIKEY}
         params = {
             'fly_from': 'LON',
